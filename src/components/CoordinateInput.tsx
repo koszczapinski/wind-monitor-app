@@ -30,7 +30,7 @@ export const CoordinateInput = ({
       coordinates.lat < -90 ||
       coordinates.lat > 90
     ) {
-      toast("Please enter a valid latitude between -90 and 90.");
+      toast.error("Please enter a valid latitude between -90 and 90.");
       return;
     }
 
